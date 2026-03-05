@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+        <title>Library Visitor Log System</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-card" id="login-form">
+            <form action="">
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="v-name" placeholder="e.g. Juan Dela Cruz" autocomplete="additional-name">
+                    <div class="error-msg" id="err-college">Please enter your full name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Institutional Email *</label>
+                    <input type="email" name="email" placeholder="yourname@neu.edu.ph" autocomplete="email">
+                    <div class="error-msg" id="err-college">Please enter a valid institutional email.</div>
+                </div>
+
+                <div class="form-group">
+                    <label>College / Department</label>
+                    <select id="v-college">
+                        <option value="">— Select your college —</option>
+                        <option value="COA">College of Accountancy (COA)</option>
+                        <option value="CAS">College of Arts and Sciences(CAS)</option>
+                        <option value="CBA">College of Business Administration</option>
+                        <option value="COC">College of Communication(COC)</option>
+                        <option value="CICS">College of Informatics and Computing Studies (CICS)</option>
+                        <option value="CCR">College of Criminology</option>
+                        <option value="CED">College of Education (CED)</option>
+                        <option value="CEA">College of Engineering and Architecture(CEA)</option>
+                        <option value="CMT">College of Medical Technology (CMT)</option>
+                        <option value="CMW">College of Midwifery(CMW)</option>
+                        <option value="CON">College of Nursing(CON)</option>
+                        <option value="CPT">College of Physical Therapy(CPT)</option>
+                        <option value="CRT">College of Respiratory Therapy(CRT)</option>
+                        <option value="SOIR">School of International Relations</option>
+                    </select>
+                    <div class="error-msg" id="err-college">Please select your college.</div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label>Purpose of Visit</label>
+                    <div class="purpose-grid">
+                        <div class="purpose-option">
+                            <input type="radio" name="purpose" id="p-reading" value="reading">
+                            <label for="p-reading">
+                            <span class="purpose-icon">📚</span> Reading
+                            </label>
+                        </div>
+                        <div class="purpose-option">
+                            <input type="radio" name="purpose" id="p-computer" value="computer">
+                            <label for="p-computer">
+                            <span class="purpose-icon">💻</span> Use of computer
+                            </label>
+                    </div>
+                    <div class="purpose-option">
+                            <input type="radio" name="purpose" id="p-studying" value="studying">
+                            <label for="p-studying">
+                            <span class="purpose-icon">📝</span> Studying
+                            </label>
+                    </div>
+                    <div class="purpose-option">
+                            <input type="radio" name="purpose" id="p-researching" value="researching">
+                            <label for="p-researching">
+                            <span class="purpose-icon">🔬</span> Researching
+                            </label>
+                    </div>
+
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
